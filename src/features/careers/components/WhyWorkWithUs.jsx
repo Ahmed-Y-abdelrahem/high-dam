@@ -13,7 +13,7 @@ export default function WhyWorkWithUs() {
     <section className="bg-gray-50 py-28">
       <Container>
         <SectionHeader
-          index="01"
+        
           overline="Why Join Us"
           title="Build your career with industry leaders."
         />

@@ -16,7 +16,6 @@ export default function BenefitsSection() {
     <section className="bg-teal-900 py-28">
       <Container>
         <SectionHeader
-          index="03"
           overline="Benefits"
           title="What we offer our team members."
           dark

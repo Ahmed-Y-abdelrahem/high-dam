@@ -13,7 +13,7 @@ export default function HiringProcess() {
     <section className="bg-gray-50 py-28">
       <Container>
         <SectionHeader
-          index="04"
+          
           overline="Hiring Process"
           title="Our recruitment journey."
           align="center"

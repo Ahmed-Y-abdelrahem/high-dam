@@ -10,7 +10,7 @@ export default function OpenPositions() {
     <section className="bg-white py-28">
       <Container>
         <SectionHeader
-          index="02"
+         
           overline="Manpower Categories"
           title="Every category, competency-based and site-ready."
         />
