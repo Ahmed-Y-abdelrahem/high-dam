@@ -1,29 +1,6 @@
-import {
-  HeroSection,
-  CorporateOverviewSection,
-  IntegratedGroupModel,  // ← من هنا
-  ServicesSection,
-  IndustriesSection,
-  ProjectsSection,
-  StatsSection,
-  WhyChooseUsSection,
-  HSESection,
-  ClientsCertifications,
-} from "@/features/home";
+import { redirect } from 'next/navigation';
 
-export default function HomePage() {
-  return (
-    <>
-      <HeroSection />
-      <CorporateOverviewSection />
-      <IntegratedGroupModel />  {/* ← استخدامه */}
-      <ServicesSection />
-      <IndustriesSection />
-      <ProjectsSection />
-      <StatsSection />
-      <WhyChooseUsSection />
-      <HSESection />
-      <ClientsCertifications />
-    </>
-  );
+export default function RootPage() {
+  // ✅ Redirect من / إلى /en تلقائياً
+  redirect('/en');
 }

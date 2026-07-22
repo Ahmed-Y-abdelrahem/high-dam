@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -25,7 +25,7 @@ export default function SectionHeader({
       <SectionLabel index={index} label={overline} dark={dark} />
       <h2
         className={`font-display text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl ${
-          dark ? "text-white" : "text-teal-900"
+          dark ? "text-white" : "text-brand-900"
         }`}
       >
         {title}

@@ -1,15 +1,18 @@
-"use client";
+﻿"use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { Building2, ArrowDown, MapPin, Calendar, Award } from "lucide-react";
 import Image from "next/image";
-import heroImg from "@/assets/images/home/hero.png"; // استيراد الصورة من assets
+import heroImg from "@/assets/images/home/hero.png";
 
 export default function HeroSection() {
+  const t = useTranslations('hero');
+
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-teal-900">
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-brand-900">
       <div className="hdg-watermark" />
       
       {/* خلفية الصورة باستخدام Next/Image */}
@@ -23,7 +26,7 @@ export default function HeroSection() {
           sizes="100vw"
         />
         {/* الـ Overlay عشان النص يظهر بوضوح */}
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-900/95 via-teal-900/70 to-teal-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 via-brand-900/70 to-brand-900/40" />
       </div>
 
       {/* شبكة هندسية */}
@@ -42,9 +45,9 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full bg-yellow-500 px-4 py-1.5 text-xs font-semibold text-teal-900 shadow-lg shadow-yellow-500/20">
+          <span className="inline-flex items-center gap-2 rounded-full bg-yellow-500 px-4 py-1.5 text-xs font-semibold text-brand-900 shadow-lg shadow-yellow-500/20">
             <Building2 size={14} strokeWidth={2.5} />
-            Integrated Group Company Profile
+            {t('badge')}
           </span>
         </motion.div>
 
@@ -55,11 +58,11 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-8 max-w-4xl font-display text-5xl font-bold leading-tight tracking-tight text-white md:text-7xl lg:text-8xl"
         >
-          One Group.
+          {t('title1')}
           <br />
-          One Standard.
+          {t('title2')}
           <br />
-          <span className="text-yellow-400">Total Project Control.</span>
+          <span className="text-yellow-400">{t('title3')}</span>
         </motion.h1>
 
         {/* الوصف */}
@@ -69,9 +72,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-8 max-w-xl text-base leading-relaxed text-white/80 md:text-lg"
         >
-          A fully integrated, execution-driven business group supporting Oil &amp; Gas
-          operators, EPC contractors, government entities, and mega project developers
-          across the Kingdom of Saudi Arabia.
+          {t('description')}
         </motion.p>
 
         {/* الأزرار */}
@@ -82,10 +83,10 @@ export default function HeroSection() {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <Button href="/contact" variant="secondary">
-            Request a Proposal
+            {t('cta1')}
           </Button>
           <Button href="/about" variant="outlineLight">
-            Explore the Group
+            {t('cta2')}
           </Button>
         </motion.div>
 
@@ -99,22 +100,22 @@ export default function HeroSection() {
           <div className="flex items-center gap-3 border-l-2 border-yellow-500 pl-4">
             <Award size={24} className="text-yellow-400" />
             <div>
-              <p className="font-display text-2xl font-bold text-white">ISO</p>
-              <p className="text-xs text-white/60">Certified Company</p>
+              <p className="font-display text-2xl font-bold text-white">{t('stat1Title')}</p>
+              <p className="text-xs text-white/60">{t('stat1Desc')}</p>
             </div>
           </div>
           <div className="flex items-center gap-3 border-l-2 border-yellow-500 pl-4">
             <Calendar size={24} className="text-yellow-400" />
             <div>
-              <p className="font-display text-2xl font-bold text-white">10+</p>
-              <p className="text-xs text-white/60">Years of Excellence</p>
+              <p className="font-display text-2xl font-bold text-white">{t('stat2Title')}</p>
+              <p className="text-xs text-white/60">{t('stat2Desc')}</p>
             </div>
           </div>
           <div className="flex items-center gap-3 border-l-2 border-yellow-500 pl-4">
             <MapPin size={24} className="text-yellow-400" />
             <div>
-              <p className="font-display text-2xl font-bold text-white">KSA</p>
-              <p className="text-xs text-white/60">Nationwide Coverage</p>
+              <p className="font-display text-2xl font-bold text-white">{t('stat3Title')}</p>
+              <p className="text-xs text-white/60">{t('stat3Desc')}</p>
             </div>
           </div>
         </motion.div>
@@ -132,7 +133,7 @@ export default function HeroSection() {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="readout text-xs text-white/50">SCROLL</span>
+          <span className="readout text-xs text-white/50">{t('scroll')}</span>
           <ArrowDown size={20} className="text-yellow-400" />
         </motion.div>
       </motion.div>
@@ -141,8 +142,8 @@ export default function HeroSection() {
       <div className="absolute inset-x-0 bottom-0 z-20">
         <Container>
           <div className="flex items-center justify-between border-t border-white/10 py-6 text-white/50">
-            <span className="readout text-xs">N26.30° E50.15° — AL KHOBAR, KSA</span>
-            <span className="readout hidden text-xs md:inline">SCROLL TO EXPLORE</span>
+            <span className="readout text-xs">{t('location')}</span>
+            <span className="readout hidden text-xs md:inline">{t('scrollExplore')}</span>
           </div>
         </Container>
       </div>

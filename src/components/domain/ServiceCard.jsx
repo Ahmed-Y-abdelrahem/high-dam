@@ -1,5 +1,6 @@
-"use client";
+﻿"use client";
 
+import { useLocale } from 'next-intl';
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -19,8 +20,17 @@ const cardVariants = {
 };
 
 export default function ServiceCard({ service, index }) {
+  const locale = useLocale();
+  
+  const getText = (field) => {
+    if (typeof service[field] === 'object' && service[field] !== null) {
+      return service[field][locale] || service[field].en;
+    }
+    return service[field];
+  };
+
   return (
-    <Link href={`/services/${service.slug}`} className="block h-full">
+    <Link href={`/${locale}/services/${service.slug}`} className="block h-full">
       <motion.div
         custom={index}
         variants={cardVariants}
@@ -30,50 +40,39 @@ export default function ServiceCard({ service, index }) {
         whileHover={{ y: -8 }}
         className="group relative h-full"
       >
-        {/* outer glow */}
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-500/10 via-transparent to-teal-500/10 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100" />
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-500/10 via-transparent to-brand-500/10 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100" />
         
-        {/* CARD */}
-        <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-teal-950 shadow-lg transition-all duration-500 group-hover:border-yellow-400/40">
-          {/* IMAGE SECTION */}
+        <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-brand-950 shadow-lg transition-all duration-500 group-hover:border-yellow-400/40">
           <div className="relative h-52 w-full overflow-hidden">
             <Image
               src={service.image}
-              alt={service.altText}
+              alt={getText('altText')}
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
               priority={index < 2}
             />
-            {/* gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-teal-950 via-teal-900/40 to-transparent" />
-            {/* top badge */}
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-900/40 to-transparent" />
             <div className="absolute top-4 left-4 rounded-full bg-black/30 px-3 py-1 text-[10px] tracking-widest text-yellow-300 backdrop-blur-md">
               {service.code}
             </div>
           </div>
           
-          {/* CONTENT SECTION */}
           <div className="relative p-6">
             <h3 className="text-lg font-bold text-white transition-colors group-hover:text-yellow-300">
-              {service.title}
+              {getText('title')}
             </h3>
             <p className="mt-2 text-sm text-white/60 line-clamp-2">
-              {service.shortDescription}
+              {getText('shortDescription')}
             </p>
-            {/* CTA */}
             <div className="mt-5 flex items-center gap-2 text-yellow-400 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span className="text-xs font-semibold tracking-wide">
-                Learn More
+                {locale === 'ar' ? 'اعرف المزيد' : 'Learn More'}
               </span>
-              <ArrowRight
-                size={14}
-                className="transition-transform group-hover:translate-x-1"
-              />
+              <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
             </div>
           </div>
           
-          {/* bottom line */}
           <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-yellow-500 to-transparent transition-all duration-500 group-hover:w-full" />
         </div>
       </motion.div>

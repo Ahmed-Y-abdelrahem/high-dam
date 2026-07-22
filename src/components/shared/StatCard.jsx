@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import AnimatedCounter from "./AnimatedCounter";
 
 /**
@@ -19,7 +19,7 @@ export default function StatCard({ stat, index }) {
     >
       <div className="mb-4 flex justify-center">
         <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-yellow-400/10 border border-yellow-400/20 transition-all duration-300 group-hover:bg-yellow-400 group-hover:scale-110">
-          <Icon size={32} className="text-yellow-400 transition-colors duration-300 group-hover:text-teal-900" />
+          <Icon size={32} className="text-yellow-400 transition-colors duration-300 group-hover:text-brand-900" />
         </div>
       </div>
 

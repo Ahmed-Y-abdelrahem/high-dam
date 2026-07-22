@@ -1,5 +1,23 @@
 import { SITE_NAME, SITE_URL, CONTACT } from "./constants";
 
+// ==========================================
+// دوال مساعدة آمنة لاستخراج البيانات حسب اللغة
+// ==========================================
+const getText = (value, locale = 'en') => {
+  if (typeof value === 'object' && value !== null) {
+    return value[locale] || value.en || '';
+  }
+  return value || '';
+};
+
+const getArray = (value, locale = 'en') => {
+  if (Array.isArray(value)) return value;
+  if (typeof value === 'object' && value !== null) {
+    return value[locale] || value.en || [];
+  }
+  return [];
+};
+
 /**
  * Generate metadata for any page
  */
@@ -110,73 +128,89 @@ export function generateLocalBusinessSchema() {
 
 /**
  * Service Schema for JSON-LD
+ * ✅ تم إضافة معلمة locale
  */
-export function generateServiceSchema(service) {
+export function generateServiceSchema(service, locale = 'en') {
+  const featuresArray = getArray(service.features, locale);
+  
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: service.title,
-    description: service.description,
-    url: `${SITE_URL}/services/${service.slug}`,
+    name: getText(service.title, locale),
+    description: getText(service.description, locale),
+    url: `${SITE_URL}/${locale}/services/${service.slug}`,
     provider: {
       "@type": "Organization",
-      name: service.company || SITE_NAME,
+      name: getText(service.company, locale) || SITE_NAME,
       url: SITE_URL,
     },
     areaServed: {
       "@type": "Country",
       name: "Saudi Arabia",
     },
-    serviceType: service.title,
+    serviceType: getText(service.title, locale),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: `${service.title} Services`,
-      itemListElement: service.features.map((feature, i) => ({
-        "@type": "Offer",
-        position: i + 1,
-        itemOffered: {
-          "@type": "Service",
-          name: feature,
-        },
-      })),
+      name: `${getText(service.title, locale)} Services`,
+      itemListElement: featuresArray.map((feature, i) => {
+        const featureText = typeof feature === 'object' ? getText(feature, locale) : feature;
+        return {
+          "@type": "Offer",
+          position: i + 1,
+          itemOffered: {
+            "@type": "Service",
+            name: featureText,
+          },
+        };
+      }),
     },
   };
 }
 
 /**
  * Project Schema for JSON-LD
+ * ✅ تم إضافة معلمة locale
  */
-export function generateProjectSchema(project) {
+export function generateProjectSchema(project, locale = 'en') {
   return {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    name: project.name,
-    description: project.description,
-    url: `${SITE_URL}/projects/${project.slug}`,
+    name: getText(project.name, locale),
+    description: getText(project.description, locale),
+    url: `${SITE_URL}/${locale}/projects/${project.slug}`,
     datePublished: project.year,
     contentLocation: {
       "@type": "Place",
-      name: project.location,
+      name: getText(project.location, locale),
     },
     provider: {
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL,
     },
-    keywords: [project.sector, project.client, project.location].join(", "),
+    keywords: [
+      getText(project.sector, locale), 
+      getText(project.client, locale), 
+      getText(project.location, locale)
+    ].filter(Boolean).join(", "),
   };
 }
 
 /**
  * Industry Schema for JSON-LD
+ * ✅ تم إضافة معلمة locale وإصلاح مشكلة .map
  */
-export function generateIndustrySchema(industry) {
+export function generateIndustrySchema(industry, locale = 'en') {
+  const servicesArray = getArray(industry.services, locale);
+  const name = getText(industry.name, locale);
+  const description = getText(industry.longDescription, locale) || getText(industry.description, locale);
+
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: `${industry.name} Services`,
-    description: industry.longDescription || industry.description,
-    url: `${SITE_URL}/industries/${industry.slug}`,
+    name: `${name} Services`,
+    description: description,
+    url: `${SITE_URL}/${locale}/industries/${industry.slug}`,
     provider: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -186,42 +220,46 @@ export function generateIndustrySchema(industry) {
       "@type": "Country",
       name: "Saudi Arabia",
     },
-    serviceType: industry.name,
+    serviceType: name,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: `${industry.name} Services`,
-      itemListElement: industry.services.map((service, i) => ({
-        "@type": "Offer",
-        position: i + 1,
-        itemOffered: {
-          "@type": "Service",
-          name: service,
-        },
-      })),
+      name: `${name} Services`,
+      itemListElement: servicesArray.map((service, i) => {
+        const serviceName = typeof service === 'object' ? getText(service, locale) : service;
+        return {
+          "@type": "Offer",
+          position: i + 1,
+          itemOffered: {
+            "@type": "Service",
+            name: serviceName,
+          },
+        };
+      }),
     },
   };
 }
 
 /**
  * FAQ Schema for JSON-LD
+ * ✅ تم إضافة معلمة locale
  */
-export function generateFAQSchema(faqs) {
+export function generateFAQSchema(faqs, locale = 'en') {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
-      name: faq.question,
+      name: getText(faq.question, locale),
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
+        text: getText(faq.answer, locale),
       },
     })),
   };
 }
 
 /**
- * Breadcrumb Schema for JSON-LD (مهم جداً للـ SEO)
+ * Breadcrumb Schema for JSON-LD
  */
 export function generateBreadcrumbSchema(items) {
   return {
@@ -230,21 +268,25 @@ export function generateBreadcrumbSchema(items) {
     itemListElement: items.map((item, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      name: item.name,
+      name: item.name, // يُفترض أن name هنا نص عادي يتم تمريره من الصفحة
       item: `${SITE_URL}${item.url}`,
     })),
   };
 }
 
 /**
- * JobPosting Schema for JSON-LD (مهم جداً لصفحات الوظائف)
+ * JobPosting Schema for JSON-LD
+ * ✅ تم إضافة معلمة locale
  */
-export function generateJobPostingSchema(job) {
+export function generateJobPostingSchema(job, locale = 'en') {
+  // استخراج المدينة من location بشكل آمن (نفترض أن location قد يكون كائناً أو نصاً)
+  const locationText = getText(job.location, locale);
+  
   return {
     "@context": "https://schema.org",
     "@type": "JobPosting",
-    title: job.title,
-    description: job.description,
+    title: getText(job.title, locale),
+    description: getText(job.description, locale),
     datePosted: job.datePosted || new Date().toISOString().split('T')[0],
     validThrough: job.validThrough || new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
     employmentType: job.employmentType || "FULL_TIME",
@@ -258,13 +300,12 @@ export function generateJobPostingSchema(job) {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Dhahran Road, Thugbah Bldg. No.3907",
-        addressLocality: "Al Khobar",
+        // نستخدم الموقع المحدد للوظيفة، أو نعود للعنوان الافتراضي للشركة
+        addressLocality: locationText || "Al Khobar",
         addressRegion: "Eastern Province",
-        postalCode: "34623",
         addressCountry: "SA",
       },
     },
-    jobLocationType: job.locationType || "TELECOMMUTE",
+    jobLocationType: job.locationType || "ONSITE",
   };
 }

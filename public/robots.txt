@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.high-dam.co
+
+# Sitemaps
+Sitemap: https://www.high-dam.co/sitemap.xml

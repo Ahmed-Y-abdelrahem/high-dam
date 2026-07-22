@@ -1,9 +1,9 @@
-import { Phone, Mail, MapPin, Clock, Globe } from "lucide-react";
+﻿import { Phone, Mail, MapPin, Clock, Globe } from "lucide-react";
 import Container from "@/components/ui/Container";
-
+import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 export default function TopBar() {
   return (
-    <div className="bg-teal-950 text-white/70 text-xs border-b border-white/5">
+    <div className="bg-brand-950 text-white/70 text-xs border-b border-white/5">
       <Container>
         <div className="flex items-center justify-between h-10">
           <div className="flex items-center gap-6">
@@ -26,7 +26,8 @@ export default function TopBar() {
               <Clock size={12} />
               <span>Sun - Thu: 8:00 AM - 5:00 PM</span>
             </div>
-            
+           
+                <LanguageSwitcher />
           </div>
         </div>
       </Container>

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Reusable icon container with hover effects
  * @param {React.ReactNode} children - The icon element
  * @param {string} className - Additional CSS classes
@@ -18,7 +18,7 @@ export default function IconBox({
         ${className}
       `}
     >
-      <div className="text-yellow-400 transition-colors duration-300 group-hover:text-teal-900">
+      <div className="text-yellow-400 transition-colors duration-300 group-hover:text-brand-900">
         {children}
       </div>
     </div>

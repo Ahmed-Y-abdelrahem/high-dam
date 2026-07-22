@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/shared/SectionHeader";
@@ -7,13 +8,12 @@ import ServiceCard from "@/components/domain/ServiceCard";
 import { services } from "@/data/services";
 
 export default function ServicesGrid() {
+  const t = useTranslations('servicesPage.grid');
+
   return (
     <section className="bg-white py-28">
       <Container>
-        <SectionHeader
-          overline="Service Lines"
-          title="Every service, mapped to the company that delivers it."
-        />
+        <SectionHeader overline={t('overline')} title={t('title')} />
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, i) => (
             <motion.div

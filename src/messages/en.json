@@ -1,0 +1,576 @@
+{
+  "common": {
+    "appName": "High Dam Group",
+    "tagline": "One Group. One Standard. Total Project Control.",
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "industries": "Industries",
+    "projects": "Projects",
+    "hse": "HSE",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Integrated Group Company Profile",
+    "title1": "One Group.",
+    "title2": "One Standard.",
+    "title3": "Total Project Control.",
+    "description": "A fully integrated, execution-driven business group supporting Oil & Gas operators, EPC contractors, government entities, and mega project developers across the Kingdom of Saudi Arabia.",
+    "cta1": "Request a Proposal",
+    "cta2": "Explore the Group",
+    "stat1Title": "ISO",
+    "stat1Desc": "Certified Company",
+    "stat2Title": "10+",
+    "stat2Desc": "Years of Excellence",
+    "stat3Title": "KSA",
+    "stat3Desc": "Nationwide Coverage",
+    "scroll": "SCROLL",
+    "scrollExplore": "SCROLL TO EXPLORE",
+    "location": "N26.30° E50.15° — AL KHOBAR, KSA"
+  },
+  "stats": {
+    "projects": "Major Projects",
+    "companies": "Group Companies",
+    "certifications": "ISO Certifications",
+    "vision": "Vision 2030"
+  },
+  "services": {
+    "overline": "Services",
+    "title": "End-to-end execution capability.",
+    "description": "From civil and MEP works to site enabling, interiors, and medical supply — delivered through a single, unified execution team.",
+    "cta": "View All Services",
+    "civilWorks": "Civil Works",
+    "civilWorksDesc": "Structural & concrete works",
+    "mechanical": "Mechanical",
+    "mechanicalDesc": "HVAC & piping systems",
+    "electrical": "Electrical & MEP",
+    "electricalDesc": "Power & automation",
+    "dewatering": "Dewatering",
+    "dewateringDesc": "Shoring & excavation",
+    "manpower": "Manpower",
+    "manpowerDesc": "Skilled workforce",
+    "interiorFitOut": "Interior Fit-Out",
+    "interiorFitOutDesc": "Turnkey solutions",
+    "viewAll": "View All Services"
+  },
+  "projects": {
+    "overline": "Mega Projects",
+    "title": "Proven execution on flagship national projects.",
+    "cta": "View Project Portfolio"
+  },
+  "industries": {
+    "overline": "Industries Served",
+    "title": "Trusted across the Kingdom's most demanding sectors.",
+    "description": "From Oil & Gas to healthcare, infrastructure to hospitality — we deliver excellence across every industry we serve.",
+    "cta": "Explore All Sectors",
+    "oilGas": "Oil & Gas",
+    "epc": "EPC & Industrial",
+    "infrastructure": "Infrastructure & Civil",
+    "healthcare": "Healthcare & Medical",
+    "hospitality": "Hospitality & Residential",
+    "commercial": "Commercial & Corporate",
+    "viewAll": "Explore All Sectors"
+  },
+  "whyChooseUs": {
+    "overline": "Why High Dam",
+    "title": "Six principles behind every project we execute."
+  },
+  "hse": {
+    "overline": "Health, Safety & Environment",
+    "title": "Zero harm is not a slogan. It is a management responsibility.",
+    "description": "The Group is fully committed to conducting all activities in a manner that protects people, assets, and the environment, in alignment with ARAMCO, SABIC, and EPC HSE requirements.",
+    "isoTitle": "ISO 45001:2018",
+    "isoDesc": "Occupational Health & Safety",
+    "cta": "View HSE Policy"
+  },
+  "clients": {
+    "overline": "Clients & Certifications",
+    "title": "Aligned with the standards our clients demand."
+  },
+  "corporateOverview": {
+    "overline": "Corporate Overview",
+    "title": "A one-stop-shop delivery model built on integration and control.",
+    "description": "Our operating model is built around a one-stop solution approach, designed to reduce contractor interfaces, accelerate mobilization, and maintain full accountability from early works through project completion.",
+    "imageAlt": "High Dam Group corporate office and facilities in Saudi Arabia",
+    "estBadge": "EST. 2014",
+    "estDesc": "A Decade of Excellence",
+    "features": {
+      "f1Title": "Single Point of Contact",
+      "f1Desc": "One accountable team for all project needs",
+      "f2Title": "Integrated Expertise",
+      "f2Desc": "5 specialized companies under one group",
+      "f3Title": "Rapid Mobilization",
+      "f3Desc": "Fast deployment of resources and manpower",
+      "f4Title": "Quality Assured",
+      "f4Desc": "ISO certified management systems"
+    }
+  },
+  "integratedGroup": {
+    "overline": "Corporate Structure",
+    "title": "One Holding Company. Five Specialized Entities.",
+    "description": "High Dam Group operates as an integrated holding company, orchestrating five specialized subsidiaries to deliver comprehensive project solutions under unified management and standards.",
+    "holdingLabel": "HOLDING COMPANY",
+    "holdingName": "HIGH DAM",
+    "holdingGroup": "GROUP",
+    "holdingSlogan": "One Group. One Standard. Total Project Control.",
+    "advantagesLabel": "STRATEGIC ADVANTAGES",
+    "advantagesTitle": "The Holding Company Advantage"
+  },
+  "footer": {
+    "description": "A fully integrated business group supporting Oil & Gas operators, EPC contractors, government entities, and mega project developers across Saudi Arabia.",
+    "companies": "OUR COMPANIES",
+    "quickLinks": "QUICK LINKS",
+    "services": "OUR SERVICES",
+    "profile": "COMPANY PROFILE",
+    "downloadTitle": "Download Our Profile",
+    "downloadDesc": "Complete overview of our services, projects, and capabilities",
+    "downloadBtn": "Download Profile",
+    "allRights": "All rights reserved."
+  },
+  "about": {
+    "hero": {
+      "label": "About High Dam Group",
+      "title": "Built to remove complexity from projects and replace it with certainty.",
+      "description": "A fully integrated, execution-driven business group supporting Oil & Gas operators, EPC contractors, government entities, and mega project developers across the Kingdom of Saudi Arabia."
+    },
+    "ceo": {
+      "overline": "Leadership",
+      "title": "A message from our Chief Executive Officer.",
+      "quote": "We believe sustainable success is built through trust, accountability, and delivering excellence every single day.",
+      "message": "Every project we undertake represents more than construction—it reflects our commitment to our clients, our people, and the communities we serve. By combining technical excellence, innovation, and uncompromising safety standards, we continue to build lasting partnerships and create long-term value across every sector we operate in.",
+      "name": "Hadi Musfer Ali Al Gashanin",
+      "role": "Chief Executive Officer"
+    },
+    "story": {
+      "whoWeAre": "Who We Are",
+      "title": "A leading Tier-1 general contracting and integrated project execution group.",
+      "description": "We partner with government entities, infrastructure developers, and industrial leaders to deliver complex projects through a fully integrated execution model that combines engineering, construction, and specialized services under one accountable group.",
+      "pillars": {
+        "fast": { "title": "Fast Execution", "desc": "Accelerates project execution and mobilization." },
+        "risk": { "title": "Risk Reduction", "desc": "Minimizes interface and commercial risks for clients." },
+        "ops": { "title": "Operational Excellence", "desc": "Maintains the highest standards of safety, quality and compliance." },
+        "partner": { "title": "Long-Term Partnership", "desc": "Building trusted relationships through consistent performance." }
+      }
+    },
+    "missionVision": {
+      "overline": "Our Foundation",
+      "title": "Driven by vision, guided by mission.",
+      "visionLabel": "Vision 2030",
+      "visionTitle": "To be the most trusted and integrated project execution partner in Saudi Arabia.",
+      "visionDesc": "Contributing to the Kingdom's Vision 2030 through excellence in delivery and unwavering commitment to quality, innovation, and long-term value creation.",
+      "missionLabel": "Mission",
+      "missionTitle": "Deliver comprehensive engineering solutions through integrated execution.",
+      "missionDesc": "Ensuring safety, quality, and timeliness while building lasting partnerships with clients through a unified and efficient project delivery model."
+    }
+  },
+  "sections": {
+    "coreValues": {
+      "overline": "Core Values",
+      "title": "Six commitments guiding every phase of execution."
+    },
+    "groupStructure": {
+      "overline": "Group Structure",
+      "title": "Five companies, one accountable execution team."
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "label": "Our Services",
+      "title": "End-to-end execution capability across every phase of a project.",
+      "description": "From early works and site enabling to full-scale construction, fit-out, and operational support — delivered by an integrated team, not a chain of subcontractors."
+    },
+    "grid": {
+      "overline": "Service Lines",
+      "title": "Every service, mapped to the company that delivers it."
+    },
+    "benefits": {
+      "overline": "Benefits",
+      "title": "Why choose our integrated approach?",
+      "items": [
+        "Single point of contact for all project needs",
+        "Reduced contractor interfaces and coordination risks",
+        "Faster mobilization and project start-up",
+        "Integrated quality control across all services",
+        "Cost efficiency through bundled solutions",
+        "Proven track record with major clients"
+      ]
+    },
+    "process": {
+      "overline": "Our Process",
+      "title": "A structured approach to project success.",
+      "steps": [
+        { "title": "Initial Consultation", "desc": "Understanding your project requirements and objectives." },
+        { "title": "Site Assessment", "desc": "Comprehensive evaluation of site conditions and challenges." },
+        { "title": "Solution Design", "desc": "Developing tailored solutions using our integrated capabilities." },
+        { "title": "Execution & Delivery", "desc": "Mobilizing resources and delivering with precision and safety." }
+      ]
+    },
+    "cta": {
+      "title": "One scope, one contract, one accountable team.",
+      "desc": "Talk to us about how an integrated execution model reduces your project risk.",
+      "btn1": "Request a Proposal",
+      "btn2": "View Our Projects"
+    },
+    "detail": {
+      "hero": {
+        "back": "Back to Services",
+        "delivered": "Delivered by"
+      },
+      "features": {
+        "overline": "Key Features",
+        "title": "Comprehensive service capabilities."
+      },
+      "advantages": {
+        "overline": "Why Choose Us",
+        "title": "Our competitive advantages."
+      },
+      "cta": {
+        "title": "Ready to discuss your {serviceTitle} needs?",
+        "desc": "Our team is ready to provide tailored solutions for your project.",
+        "btn1": "Request a Quote",
+        "btn2": "View All Services"
+      }
+    }
+  },
+  "industriesPage": {
+    "hero": {
+      "label": "Industries Served",
+      "title": "Deep sector expertise, one execution standard.",
+      "description": "Trusted by operators, EPC contractors, and government entities across the Kingdom's most demanding industries."
+    },
+    "grid": {
+      "overline": "Sectors",
+      "title": "Where High Dam Group operates."
+    },
+    "benefits": {
+      "overline": "Our Advantage",
+      "title": "Sector-specific expertise, group-wide accountability.",
+      "items": [
+        "Specialized expertise for each sector",
+        "Compliance with industry-specific regulations",
+        "Tailored solutions for unique challenges",
+        "Proven track record in each industry",
+        "Dedicated teams with sector knowledge",
+        "Long-term partnerships with major clients"
+      ]
+    },
+    "cta": {
+      "title": "Ready to discuss your industry-specific needs?",
+      "desc": "Our team is ready to provide tailored solutions for your sector.",
+      "btn1": "Contact Our Team",
+      "btn2": "View Case Studies"
+    },
+    "detail": {
+      "hero": {
+        "back": "Back to Industries",
+        "sector": "Industry Sector",
+        "services": "Services",
+        "capabilities": "Capabilities",
+        "coverage": "Coverage",
+        "kingdomWide": "Kingdom-wide"
+      },
+      "overview": {
+        "overline": "Industry Expertise",
+        "title": "Comprehensive solutions for",
+        "capabilitiesTitle": "Our Capabilities in This Sector",
+        "servicesLabel": "Services",
+        "projectsLabel": "Projects",
+        "complianceLabel": "Compliance"
+      },
+      "challenges": {
+        "overline": "Challenges & Solutions",
+        "title": "How we address sector-specific challenges.",
+        "description": "Every industry has unique requirements. Our deep expertise allows us to anticipate challenges and deliver tailored solutions.",
+        "challengesTitle": "Industry Challenges",
+        "challengesDesc": "Key obstacles we overcome",
+        "solutionsTitle": "Our Solutions",
+        "solutionsDesc": "How we deliver excellence"
+      },
+      "projects": {
+        "overline": "Related Projects",
+        "title": "Our work in this sector.",
+        "description": "Explore our portfolio of successfully delivered projects in this industry.",
+        "viewDetails": "View Project Details",
+        "viewAll": "View All Projects"
+      },
+      "cta": {
+        "title": "Ready to discuss your {industryName} needs?",
+        "desc": "Our team has the expertise to deliver tailored solutions for your industry. Let's build something exceptional together.",
+        "btn1": "Contact Our Team",
+        "btn2": "View All Industries"
+      }
+    }
+  },
+  "projectsPage": {
+    "hero": {
+      "label": "Project Portfolio",
+      "title": "Proven execution on the Kingdom's most demanding sites.",
+      "description": "More than 50 major structural projects executed in Saudi Arabia for government projects and main contractors."
+    },
+    "stats": {
+      "majorProjects": "Major Projects",
+      "yearsExperience": "Years Experience",
+      "clientSatisfaction": "Client Satisfaction",
+      "safetyIncidents": "Safety Incidents"
+    },
+    "grid": {
+      "overline": "Selected Projects",
+      "title": "From early works to final handover."
+    },
+    "cta": {
+      "title": "The next mega project on your list — executed with certainty.",
+      "desc": "Partner with High Dam Group for decisive action and disciplined execution.",
+      "btn1": "Start Your Project",
+      "btn2": "Explore Services"
+    }
+  },
+  "projectDetails": {
+    "hero": {
+      "back": "Back to Projects",
+      "location": "Location",
+      "year": "Year",
+      "value": "Value",
+      "duration": "Duration",
+      "client": "Client"
+    },
+    "overview": {
+      "overline": "Project Overview",
+      "title": "Scope of work.",
+      "descriptionLabel": "Description",
+      "scopeLabel": "Scope",
+      "deliverablesTitle": "Key Deliverables"
+    },
+    "challenges": {
+      "overline": "Challenges & Solutions",
+      "title": "How we delivered excellence.",
+      "description": "Every project has unique challenges. Our expertise allows us to overcome obstacles and deliver outstanding results.",
+      "challengesTitle": "Challenges",
+      "solutionsTitle": "Solutions",
+      "resultsTitle": "Results"
+    },
+    "cta": {
+      "title": "Ready to discuss your project?",
+      "desc": "Let's work together to deliver your next project with the same excellence and precision.",
+      "btn1": "Contact Us",
+      "btn2": "View All Projects"
+    }
+  },
+  "hsePage": {
+    "hero": {
+      "back": "Back to Homepage",
+      "label": "Health, Safety & Environment",
+      "title": "Zero harm to people and the environment.",
+      "description": "The Group is fully committed to conducting all activities in a manner that protects people, assets, and the environment, in alignment with ARAMCO, SABIC, and EPC HSE requirements.",
+      "coreValueLabel": "Core Value",
+      "coreValue": "Safety First",
+      "certLabel": "Certification",
+      "cert": "ISO 45001:2018",
+      "commitmentLabel": "Commitment",
+      "commitment": "Zero Harm"
+    },
+    "overview": {
+      "overline": "HSE Management System",
+      "title": "Our commitment to excellence in safety.",
+      "description": "High Dam Group has implemented a comprehensive HSE management system that ensures the safety and well-being of all personnel, protection of assets, and environmental stewardship.",
+      "pillars": [
+        { "title": "Safety Management", "desc": "Comprehensive safety management systems aligned with international standards and local regulations." },
+        { "title": "Risk Prevention", "desc": "Proactive risk assessment and mitigation strategies to prevent incidents before they occur." },
+        { "title": "Training & Awareness", "desc": "Continuous HSE training programs for all employees, subcontractors, and site personnel." },
+        { "title": "Compliance", "desc": "Full compliance with ARAMCO, SABIC, and government HSE requirements and regulations." }
+      ]
+    },
+    "statistics": {
+      "lti": "Lost Time Injuries",
+      "incidentReduction": "Incident Reduction",
+      "trainedPersonnel": "Trained Personnel",
+      "complianceRate": "Compliance Rate"
+    },
+    "commitment": {
+      "overline": "Our Commitment",
+      "title": "Safety is not just a policy, it's our culture.",
+      "description": "Every member of High Dam Group is committed to working safely and ensuring the safety of others.",
+      "items": [
+        { "title": "People First", "desc": "The safety and well-being of our people is our highest priority, above all production targets." },
+        { "title": "Zero Harm Goal", "desc": "We strive for zero injuries, zero illnesses, and zero environmental incidents on every project." },
+        { "title": "Shared Responsibility", "desc": "Safety is everyone's responsibility, from leadership to every team member on site." },
+        { "title": "Continuous Improvement", "desc": "We regularly review and enhance our HSE systems to achieve better outcomes." }
+      ]
+    },
+    "principles": {
+      "overline": "Safety Principles",
+      "title": "Six fundamental beliefs that guide our actions.",
+      "description": "These principles form the foundation of our safety culture and drive our commitment to zero harm.",
+      "items": [
+        { "title": "All injuries are preventable", "desc": "We believe every incident can be avoided through proper planning and execution." },
+        { "title": "Visible leadership", "desc": "Management demonstrates commitment through active participation in HSE activities." },
+        { "title": "Stop work authority", "desc": "Every employee has the authority and obligation to stop unsafe work." },
+        { "title": "Safety is a condition of employment", "desc": "HSE performance is integral to job responsibilities at all levels." },
+        { "title": "Hazard identification", "desc": "Proactive identification and control of hazards before work begins." },
+        { "title": "Continuous improvement", "desc": "Regular review and enhancement of HSE systems and processes." }
+      ]
+    },
+    "training": {
+      "overline": "Training & Development",
+      "title": "Building a culture of safety through education.",
+      "description": "Our comprehensive training programs ensure that every team member has the knowledge and skills to work safely and protect others.",
+      "programs": [
+        { 
+          "title": "HSE Induction", 
+          "desc": "Comprehensive safety orientation for all new employees and site personnel.",
+          "features": ["Site-specific hazards", "Emergency procedures", "PPE requirements", "Safety policies"]
+        },
+        { 
+          "title": "Supervisor Training", 
+          "desc": "Advanced HSE leadership and management training for site supervisors and managers.",
+          "features": ["Risk assessment", "Incident investigation", "Safety leadership", "Team engagement"]
+        },
+        { 
+          "title": "Specialized Courses", 
+          "desc": "Technical training for specific roles and high-risk activities.",
+          "features": ["Confined space entry", "Working at heights", "Hot work permits", "Electrical safety"]
+        },
+        { 
+          "title": "Competency Assessment", 
+          "desc": "Regular evaluation and certification of HSE competencies across all levels.",
+          "features": ["Skills verification", "Knowledge testing", "Practical assessment", "Recertification"]
+        }
+      ]
+    },
+    "certifications": {
+      "overline": "Certifications & Compliance",
+      "title": "Internationally recognized standards.",
+      "description": "Our certifications demonstrate our commitment to maintaining the highest standards in health, safety, and environmental management.",
+      "items": [
+        { "code": "ISO 45001:2018", "title": "Occupational Health & Safety", "desc": "International standard for occupational health and safety management systems." },
+        { "code": "ISO 14001:2015", "title": "Environmental Management", "desc": "Framework for effective environmental management systems and sustainable practices." },
+        { "code": "ISO 9001:2015", "title": "Quality Management", "desc": "Quality management systems ensuring consistent delivery of high-quality services." },
+        { "code": "ARAMCO Approved", "title": "Safety Prequalification", "desc": "Full compliance with Saudi Aramco's stringent safety and quality requirements." }
+      ]
+    },
+    "emergency": {
+      "overline": "Emergency Preparedness",
+      "title": "Ready to respond, 24/7.",
+      "description": "Our comprehensive emergency response capabilities ensure rapid and effective action in any situation.",
+      "capabilities": [
+        { "title": "Medical Emergency Response", "desc": "On-site medical facilities and trained first aiders at all project locations." },
+        { "title": "Fire Fighting", "desc": "Certified fire fighting teams and equipment ready for immediate response." },
+        { "title": "Spill Response", "desc": "Rapid response teams and equipment for environmental spill containment." },
+        { "title": "Evacuation Procedures", "desc": "Well-defined evacuation plans and regular drills at all sites." }
+      ],
+      "hotlineTitle": "24/7 Emergency Hotline",
+      "hotlineNumber": "+966 13 899 6997",
+      "hotlineDesc": "Available round the clock for all HSE emergencies"
+    },
+    "cta": {
+      "title": "Have questions about our HSE standards?",
+      "desc": "Our HSE team is ready to discuss how we maintain the highest safety standards on every project.",
+      "btn1": "Contact HSE Team",
+      "btn2": "Learn More About Us",
+      "phone": "+966 13 899 6997",
+      "email": "hse@high-dam.co"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "label": "Contact",
+      "title": "Let's discuss your next mega project.",
+      "description": "We are ready to assist you — for EPC partnerships, project inquiries, or general information."
+    },
+    "info": {
+      "label": " Reach Us Directly",
+      "title": "We are ready to assist you.",
+      "address": "Dhahran Road, Thugbah Bldg. No.3907\nAdditional No. 8828, Saudi Arabia 34623",
+      "phone": "+966 13 899 6997 · +966 56 750 6353",
+      "email": "info@high-dam.co",
+      "mapTitle": "High Dam Group location"
+    },
+    "form": {
+      "types": ["EPC Partnership", "Careers", "Media Inquiry", "General"],
+      "submittedTitle": "Message received.",
+      "submittedDesc": "Our team will get back to you within one business day.",
+      "name": "Full Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "offices": {
+      "overline": "Our Offices",
+      "title": "Strategic locations across the Kingdom.",
+      "locations": [
+        { "city": "Al Khobar (Headquarters)", "address": "Dhahran Road, Thugbah Bldg. No.3907" },
+        { "city": "Riyadh", "address": "Olaya District, Business Center" },
+        { "city": "Jeddah", "address": "Prince Sultan Road, Commercial Center" }
+      ]
+    },
+    "faq": {
+      "overline": "FAQ",
+      "title": "Frequently asked questions.",
+      "items": [
+        { "q": "What services does High Dam Group provide?", "a": "We provide integrated project execution services including civil works, MEP, dewatering, shoring, manpower supply, and equipment rental." },
+        { "q": "Which industries do you serve?", "a": "We serve Oil & Gas, infrastructure, healthcare, hospitality, commercial, and government sectors across Saudi Arabia." },
+        { "q": "What are your HSE standards?", "a": "We maintain ISO 9001, 14001, and 45001 certifications and comply with ARAMCO, SABIC, and EPC HSE requirements." },
+        { "q": "How can I request a proposal?", "a": "You can contact us through our contact form, email, or phone. Our team will respond within one business day." }
+      ]
+    }
+  },
+  "careersPage": {
+    "hero": {
+      "label": "Careers",
+      "title": "Join the team behind the Kingdom's mega projects.",
+      "description": "Manpower mobilization is carried out in full compliance with ARAMCO & SABIC manpower, competency, certification, and site access requirements."
+    },
+    "benefits": {
+      "overline": "Benefits",
+      "title": "What we offer our team members.",
+      "items": [
+        "Competitive salary and allowances",
+        "Health insurance coverage",
+        "Annual leave and holidays",
+        "Training and certification programs",
+        "Career advancement opportunities",
+        "Safe and professional work environment"
+      ]
+    },
+    "whyJoin": {
+      "overline": "Why Join Us",
+      "title": "Build your career with industry leaders.",
+      "reasons": [
+        { "title": "Mega Projects", "desc": "Work on Saudi Arabia's most ambitious projects." },
+        { "title": "Career Growth", "desc": "Continuous learning and development opportunities." },
+        { "title": "Safety Culture", "desc": "Join a team that prioritizes your well-being." },
+        { "title": "Competitive Benefits", "desc": "Attractive compensation and benefits package." }
+      ]
+    },
+    "hiringProcess": {
+      "overline": "Hiring Process",
+      "title": "Our recruitment journey.",
+      "steps": [
+        { "step": "01", "title": "Application", "desc": "Submit your CV and qualifications." },
+        { "step": "02", "title": "Screening", "desc": "Initial review of applications." },
+        { "step": "03", "title": "Interview", "desc": "Technical and competency assessment." },
+        { "step": "04", "title": "Onboarding", "desc": "Orientation and site induction." }
+      ]
+    },
+    "openPositions": {
+      "overline": "Manpower Categories",
+      "title": "Every category, competency-based and site-ready."
+    },
+    "cta": {
+      "title": "Build the next generation of projects with us.",
+      "description": "Submit your CV and join our team of professionals.",
+      "button": "Submit Your CV"
+    }
+  },
+  "mobileMenu": {
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "getInTouch": "Get In Touch",
+    "copyright": "© 2026 High Dam Group",
+    "rights": "All Rights Reserved"
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from 'next-intl';
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/shared/SectionHeader";
@@ -8,12 +9,11 @@ import ServiceCard from "@/components/domain/ServiceCard";
 import { services } from "@/data/services";
 
 export default function ServicesSection() {
+  const t = useTranslations('services');
   const featured = services.slice(0, 4);
 
   return (
     <section className="relative overflow-hidden bg-gray-50 py-28 md:py-32">
-      
-      {/* Subtle Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="h-full w-full" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, #006778 1px, transparent 0)`,
@@ -21,18 +21,17 @@ export default function ServicesSection() {
         }} />
       </div>
 
-      {/* Top Accent Line */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent opacity-30" />
 
       <Container className="relative z-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeader
-            overline="Services"
-            title="End-to-end execution capability."
-            description="From civil and MEP works to site enabling, interiors, and medical supply — delivered through a single, unified execution team."
+            overline={t('overline')}
+            title={t('title')}
+            description={t('description')}
           />
           <Button href="/services" variant="primary">
-            View All Services
+            {t('cta')}
           </Button>
         </div>
 
@@ -41,8 +40,6 @@ export default function ServicesSection() {
             <ServiceCard key={service.code} service={service} index={i} />
           ))}
         </div>
-
-        
       </Container>
     </section>
   );

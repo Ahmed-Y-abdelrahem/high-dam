@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
@@ -16,13 +16,13 @@ export default function MegaMenu({ submenu, href, label }) {
           <Link
             key={item.href}
             href={item.href}
-            className="flex items-start gap-3 p-3 rounded-lg hover:bg-teal-50 transition-colors group/item"
+            className="flex items-start gap-3 p-3 rounded-lg hover:bg-brand-50 transition-colors group/item"
           >
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-100 group-hover/item:bg-yellow-400 transition-colors">
-              <ArrowRight size={14} className="text-teal-700 group-hover/item:text-teal-900" />
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-100 group-hover/item:bg-yellow-400 transition-colors">
+              <ArrowRight size={14} className="text-brand-700 group-hover/item:text-brand-900" />
             </div>
             <div>
-              <p className="text-sm font-semibold text-teal-900 group-hover/item:text-teal-700">
+              <p className="text-sm font-semibold text-brand-900 group-hover/item:text-brand-700">
                 {item.label}
               </p>
               <p className="text-xs text-gray-600 mt-0.5">
@@ -35,7 +35,7 @@ export default function MegaMenu({ submenu, href, label }) {
       <div className="border-t border-gray-200 p-3 bg-gray-50">
         <Link 
           href={href}
-          className="flex items-center justify-center gap-2 text-sm font-semibold text-teal-700 hover:text-yellow-600 transition-colors"
+          className="flex items-center justify-center gap-2 text-sm font-semibold text-brand-700 hover:text-yellow-600 transition-colors"
         >
           View All {label}
           <ArrowRight size={14} />

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
 import Container from "@/components/ui/Container";
 
@@ -22,7 +22,7 @@ export default function Breadcrumbs({ items }) {
                 
                 {isLast ? (
                   <span 
-                    className="text-teal-700 font-semibold" 
+                    className="text-brand-700 font-semibold" 
                     aria-current="page"
                     itemProp="name"
                   >
@@ -31,7 +31,7 @@ export default function Breadcrumbs({ items }) {
                 ) : (
                   <Link
                     href={item.url}
-                    className="flex items-center gap-1 text-gray-600 hover:text-teal-700 transition-colors"
+                    className="flex items-center gap-1 text-gray-600 hover:text-brand-700 transition-colors"
                     itemProp="item"
                   >
                     {i === 0 && <Home size={14} />}

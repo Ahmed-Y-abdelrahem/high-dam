@@ -1,4 +1,4 @@
-import Container from "@/components/ui/Container";
+﻿import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/shared/SectionHeader";
 
 export default function CorporateOverviewSection() {
@@ -14,9 +14,9 @@ export default function CorporateOverviewSection() {
           <div className="relative h-80 overflow-hidden rounded-2xl md:h-auto">
             <div
               className="h-full w-full bg-cover bg-center"
-              style={{ backgroundImage: "url(/images/about/about-company.png)" }}
+              style={{ backgroundImage: "url(/images/about/about-company.png)" }}ششششششش
             />
-            <div className="absolute inset-0 bg-teal-900/10" />
+            <div className="absolute inset-0 bg-brand-900/10" />
           </div>
         </div>
       </Container>
